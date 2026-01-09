@@ -5,11 +5,16 @@ imprima 15% do valor.*/
 
 public class CalculadoraCondition {
     public static void main(String[] args) {
-        float salario = 4700.50F;
+        float salario = 4800.50F;
+        float resultado = 0F;
+        String porcentagem = "";
         if(salario > 4500) {
-            System.out.println(salario * 0.30);
+            resultado = salario * 0.30F;
+            porcentagem = "30%";
         } else {
-            System.out.println(salario * 0.15);
+            resultado = salario * 0.15F;
+            porcentagem = "15%";
         }
+        System.out.println("O valor em porcentagem de "+porcentagem+" é " +  resultado);
     }
 }
